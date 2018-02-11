@@ -5,14 +5,11 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.support.v4.content.ContextCompat.startActivity
 import android.support.v7.app.AppCompatActivity
-import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.TimePicker
 import android.widget.Toast
-import com.example.davegilbier.alarmclockstopwatch.R.id.stop_watch
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -84,8 +81,8 @@ class MainActivity : AppCompatActivity() {
 
         val stopwatch = findViewById(R.id.stop_watch) as Button
         stopwatch.setOnClickListener{
-        var myintent = Intent(this@MainActivity, StopWatch::class.java)
-        startActivity(myintent)
+            var myintent = Intent(this@MainActivity, StopWatch::class.java)
+            startActivity(myintent)
         }
 
     }

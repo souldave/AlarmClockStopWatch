@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">AlarmClockStopWatch</string>
+    <string name="a_l_a_r_m_c_l_o_c_k">A L A R M C L O C K</string>
+    <string name="r_e_c_o_r_d">R E C O R D</string>
+    <string name="reset">Reset</string>
+    <string name="pause">Pause</string>
+    <string name="start">Start</string>
+    <string name="time">00:00:00</string>
+    <string name="set_your_alarm">SET YOUR ALARM</string>
+    <string name="s_t_o_p_w_a_t_c_h">S T O P W A T C H</string>
 </resources>

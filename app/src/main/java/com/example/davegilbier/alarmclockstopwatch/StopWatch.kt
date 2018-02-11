@@ -7,15 +7,12 @@ package com.example.davegilbier.alarmclockstopwatch
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.SystemClock
+import android.support.v7.app.AppCompatActivity
 import android.view.View
-import android.widget.ArrayAdapter
-import android.widget.Button
-import android.widget.ListView
-import android.widget.TextView
+import android.widget.*
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -23,9 +20,9 @@ import kotlin.collections.ArrayList
 class StopWatch : AppCompatActivity() {
 
     lateinit var textView: TextView
-    private lateinit var btnStart: Button
-    private lateinit var btnPause: Button
-    lateinit var btnReset: Button
+    private lateinit var btnStart: ImageView
+    private lateinit var btnPause: ImageView
+    lateinit var btnReset: ImageView
     private lateinit var btnSaveLap: Button
     private lateinit var listView: ListView
     lateinit var handler: Handler
@@ -46,9 +43,9 @@ class StopWatch : AppCompatActivity() {
         setContentView(R.layout.activity_stopwatch)
 
         textView = findViewById(R.id.tvTime) as TextView
-        btnStart = findViewById(R.id.btnStart) as Button
-        btnPause = findViewById(R.id.btnPause) as Button
-        btnReset = findViewById(R.id.btnReset) as Button
+            btnStart = findViewById(R.id.btnStart) as ImageView
+            btnPause = findViewById(R.id.btnPause) as ImageView
+            btnReset = findViewById(R.id.btnReset) as ImageView
         btnSaveLap = findViewById(R.id.btnSaveLap) as Button
         listView = findViewById(R.id.listview) as ListView
         handler = Handler()
