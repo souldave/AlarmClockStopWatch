@@ -12,6 +12,7 @@ import android.widget.TimePicker
 import android.widget.Toast
 import java.util.*
 
+@Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
 
     private lateinit var alarmManager: AlarmManager
@@ -37,10 +38,6 @@ class MainActivity : AppCompatActivity() {
         // iset ang time
         val calendar = Calendar.getInstance()
         alarmTimePicker = findViewById(R.id.alarmTimePicker) as TimePicker
-
-
-
-
 
 
         val startAlarm = findViewById(R.id.start_alarm) as Button
@@ -100,9 +97,6 @@ class MainActivity : AppCompatActivity() {
     public override fun onDestroy() {
         super.onDestroy()
     }
-
-
-
 
 
 }
